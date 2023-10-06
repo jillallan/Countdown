@@ -25,6 +25,7 @@ struct CountdownModelContainer {
 extension CountdownModelContainer: ViewModifier {
     func body(content: Content) -> some View {
         content
+            .generateData()
             .modelContainer(container)
     }
 }

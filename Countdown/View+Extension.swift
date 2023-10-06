@@ -11,4 +11,8 @@ extension View {
     func countdownModelContainer(inMemory: Bool = true) -> some View {
         modifier(CountdownModelContainer(inMemory: inMemory))
     }
+    
+    func generateData() -> some View {
+        modifier(GenerateDataViewModifier())
+    }
 }
