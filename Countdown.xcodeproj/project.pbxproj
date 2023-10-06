@@ -21,6 +21,9 @@
 		78C0A49C2AD00B0400C21E4A /* GenerateDataViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0A49B2AD00B0400C21E4A /* GenerateDataViewModifier.swift */; };
 		78C0A49E2AD00D1300C21E4A /* Event+SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0A49D2AD00D1300C21E4A /* Event+SampleData.swift */; };
 		78C0A4A02AD00D8800C21E4A /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0A49F2AD00D8800C21E4A /* DateFormatter+Extension.swift */; };
+		78C0A4A62AD02A0100C21E4A /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0A4A52AD02A0100C21E4A /* EventRow.swift */; };
+		78C0A4A82AD02AF500C21E4A /* ModelPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0A4A72AD02AF500C21E4A /* ModelPreview.swift */; };
+		78C0A4AA2AD02D2A00C21E4A /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0A4A92AD02D2A00C21E4A /* Calendar+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		78C0A49B2AD00B0400C21E4A /* GenerateDataViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateDataViewModifier.swift; sourceTree = "<group>"; };
 		78C0A49D2AD00D1300C21E4A /* Event+SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+SampleData.swift"; sourceTree = "<group>"; };
 		78C0A49F2AD00D8800C21E4A /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		78C0A4A52AD02A0100C21E4A /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
+		78C0A4A72AD02AF500C21E4A /* ModelPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPreview.swift; sourceTree = "<group>"; };
+		78C0A4A92AD02D2A00C21E4A /* Calendar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +117,10 @@
 			children = (
 				78C0A4642AD000B200C21E4A /* CountdownApp.swift */,
 				78C0A4662AD000B200C21E4A /* ContentView.swift */,
+				78C0A4A52AD02A0100C21E4A /* EventRow.swift */,
 				78C0A4952AD0082400C21E4A /* CountdownModelContainer.swift */,
 				78C0A4992AD00A9000C21E4A /* DataGeneration.swift */,
+				78C0A4A72AD02AF500C21E4A /* ModelPreview.swift */,
 				78C0A4A32AD013A400C21E4A /* Extensions */,
 				78C0A4A42AD013BD00C21E4A /* ViewModifiers */,
 				78C0A48F2AD0011200C21E4A /* Event.swift */,
@@ -154,6 +162,7 @@
 			children = (
 				78C0A4972AD0089C00C21E4A /* View+Extension.swift */,
 				78C0A49F2AD00D8800C21E4A /* DateFormatter+Extension.swift */,
+				78C0A4A92AD02D2A00C21E4A /* Calendar+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -297,12 +306,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				78C0A4672AD000B200C21E4A /* ContentView.swift in Sources */,
+				78C0A4AA2AD02D2A00C21E4A /* Calendar+Extension.swift in Sources */,
 				78C0A49C2AD00B0400C21E4A /* GenerateDataViewModifier.swift in Sources */,
 				78C0A49E2AD00D1300C21E4A /* Event+SampleData.swift in Sources */,
+				78C0A4A82AD02AF500C21E4A /* ModelPreview.swift in Sources */,
 				78C0A4962AD0082400C21E4A /* CountdownModelContainer.swift in Sources */,
 				78C0A4982AD0089C00C21E4A /* View+Extension.swift in Sources */,
 				78C0A4A02AD00D8800C21E4A /* DateFormatter+Extension.swift in Sources */,
 				78C0A4902AD0011200C21E4A /* Event.swift in Sources */,
+				78C0A4A62AD02A0100C21E4A /* EventRow.swift in Sources */,
 				78C0A4652AD000B200C21E4A /* CountdownApp.swift in Sources */,
 				78C0A49A2AD00A9000C21E4A /* DataGeneration.swift in Sources */,
 			);
