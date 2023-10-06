@@ -16,6 +16,7 @@
 		78C0A4832AD000B300C21E4A /* CountdownUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0A4822AD000B300C21E4A /* CountdownUITestsLaunchTests.swift */; };
 		78C0A4902AD0011200C21E4A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0A48F2AD0011200C21E4A /* Event.swift */; };
 		78C0A4962AD0082400C21E4A /* CountdownModelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0A4952AD0082400C21E4A /* CountdownModelContainer.swift */; };
+		78C0A4982AD0089C00C21E4A /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0A4972AD0089C00C21E4A /* View+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		78C0A4822AD000B300C21E4A /* CountdownUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		78C0A48F2AD0011200C21E4A /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		78C0A4952AD0082400C21E4A /* CountdownModelContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownModelContainer.swift; sourceTree = "<group>"; };
+		78C0A4972AD0089C00C21E4A /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				78C0A4642AD000B200C21E4A /* CountdownApp.swift */,
 				78C0A4662AD000B200C21E4A /* ContentView.swift */,
 				78C0A4952AD0082400C21E4A /* CountdownModelContainer.swift */,
+				78C0A4972AD0089C00C21E4A /* View+Extension.swift */,
 				78C0A48F2AD0011200C21E4A /* Event.swift */,
 				78C0A4682AD000B300C21E4A /* Assets.xcassets */,
 				78C0A46A2AD000B300C21E4A /* Countdown.entitlements */,
@@ -267,6 +270,7 @@
 			files = (
 				78C0A4672AD000B200C21E4A /* ContentView.swift in Sources */,
 				78C0A4962AD0082400C21E4A /* CountdownModelContainer.swift in Sources */,
+				78C0A4982AD0089C00C21E4A /* View+Extension.swift in Sources */,
 				78C0A4902AD0011200C21E4A /* Event.swift in Sources */,
 				78C0A4652AD000B200C21E4A /* CountdownApp.swift in Sources */,
 			);
