@@ -38,6 +38,7 @@ struct EventRow: View {
         .padding()
         .foregroundColor(.white)
         .background(Color.indigo)
+        
         .clipShape(RoundedRectangle(cornerRadius: 15.0, style: .circular))
         .onReceive(timer) { input in
             let date: Date = input
