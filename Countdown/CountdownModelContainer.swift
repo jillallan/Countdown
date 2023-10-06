@@ -10,6 +10,7 @@ import SwiftUI
 
 struct CountdownModelContainer {
     let container: ModelContainer
+    var dataGeneration: DataGeneration.Type = DataGeneration.self
     
     init(inMemory: Bool) {
         do {
