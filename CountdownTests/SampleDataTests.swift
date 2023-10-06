@@ -9,7 +9,7 @@ import SwiftData
 import XCTest
 @testable import Countdown
 
-final class CountdownTests: XCTestCase {
+final class SampleDataTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -19,7 +19,7 @@ final class CountdownTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    @MainActor func testExample() throws {
+    @MainActor func testGenerateData_generatesThreeSamples() throws {
         let container = CountdownModelContainer(inMemory: true)
         
         container.dataGeneration.generateData(modelContext: container.container.mainContext)
