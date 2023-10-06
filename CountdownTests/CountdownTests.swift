@@ -5,7 +5,9 @@
 //  Created by Jill Allan on 06/10/2023.
 //
 
+import SwiftData
 import XCTest
+@testable import Countdown
 
 final class CountdownTests: XCTestCase {
 
@@ -17,7 +19,15 @@ final class CountdownTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    @MainActor func testExample() throws {
+        let container = CountdownModelContainer(inMemory: true)
+        
+        container.dataGeneration.generateData(modelContext: container.container.mainContext)
+        
+        let events = try container.container.mainContext.fetchCount(FetchDescriptor<Event>())
+        
+        XCTAssertEqual(events, 3, "Sample events loaded should equal 3")
+        
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         // Any test you write for XCTest can be annotated as throws and async.
