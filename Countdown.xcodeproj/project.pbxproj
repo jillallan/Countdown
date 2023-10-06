@@ -11,7 +11,7 @@
 		78C0A4672AD000B200C21E4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0A4662AD000B200C21E4A /* ContentView.swift */; };
 		78C0A4692AD000B300C21E4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78C0A4682AD000B300C21E4A /* Assets.xcassets */; };
 		78C0A46D2AD000B300C21E4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78C0A46C2AD000B300C21E4A /* Preview Assets.xcassets */; };
-		78C0A4772AD000B300C21E4A /* CountdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0A4762AD000B300C21E4A /* CountdownTests.swift */; };
+		78C0A4772AD000B300C21E4A /* SampleDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0A4762AD000B300C21E4A /* SampleDataTests.swift */; };
 		78C0A4812AD000B300C21E4A /* CountdownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0A4802AD000B300C21E4A /* CountdownUITests.swift */; };
 		78C0A4832AD000B300C21E4A /* CountdownUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0A4822AD000B300C21E4A /* CountdownUITestsLaunchTests.swift */; };
 		78C0A4902AD0011200C21E4A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0A48F2AD0011200C21E4A /* Event.swift */; };
@@ -52,7 +52,7 @@
 		78C0A46A2AD000B300C21E4A /* Countdown.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Countdown.entitlements; sourceTree = "<group>"; };
 		78C0A46C2AD000B300C21E4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		78C0A4722AD000B300C21E4A /* CountdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountdownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		78C0A4762AD000B300C21E4A /* CountdownTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTests.swift; sourceTree = "<group>"; };
+		78C0A4762AD000B300C21E4A /* SampleDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleDataTests.swift; sourceTree = "<group>"; };
 		78C0A47C2AD000B300C21E4A /* CountdownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountdownUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C0A4802AD000B300C21E4A /* CountdownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownUITests.swift; sourceTree = "<group>"; };
 		78C0A4822AD000B300C21E4A /* CountdownUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -67,6 +67,7 @@
 		78C0A4A72AD02AF500C21E4A /* ModelPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPreview.swift; sourceTree = "<group>"; };
 		78C0A4A92AD02D2A00C21E4A /* Calendar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Extension.swift"; sourceTree = "<group>"; };
 		78C0A4AB2AD030EA00C21E4A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		78C0A4AD2AD03A7000C21E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +118,7 @@
 		78C0A4632AD000B200C21E4A /* Countdown */ = {
 			isa = PBXGroup;
 			children = (
+				78C0A4AD2AD03A7000C21E4A /* Info.plist */,
 				78C0A4642AD000B200C21E4A /* CountdownApp.swift */,
 				78C0A4662AD000B200C21E4A /* ContentView.swift */,
 				78C0A4AB2AD030EA00C21E4A /* DetailView.swift */,
@@ -146,7 +148,7 @@
 		78C0A4752AD000B300C21E4A /* CountdownTests */ = {
 			isa = PBXGroup;
 			children = (
-				78C0A4762AD000B300C21E4A /* CountdownTests.swift */,
+				78C0A4762AD000B300C21E4A /* SampleDataTests.swift */,
 			);
 			path = CountdownTests;
 			sourceTree = "<group>";
@@ -328,7 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78C0A4772AD000B300C21E4A /* CountdownTests.swift in Sources */,
+				78C0A4772AD000B300C21E4A /* SampleDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +486,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Countdown/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -523,6 +526,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Countdown/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
