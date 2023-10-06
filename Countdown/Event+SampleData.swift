@@ -11,7 +11,7 @@ import SwiftData
 extension Event {
     static var wedding = Event(
         date: DateFormatter.date(withDefaultFormat: "2023/09/02 11:30:00"),
-        title: "Honeymoon"
+        title: "Wedding"
     )
     
     static var honeymoon = Event(
@@ -21,6 +21,6 @@ extension Event {
     
     static var christmas = Event(
         date: DateFormatter.date(withDefaultFormat: "2023/12/25 00:00:00"),
-        title: "Honeymoon"
+        title: "Christmas"
     )
 }
