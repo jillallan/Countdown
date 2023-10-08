@@ -15,4 +15,15 @@ extension View {
     func generateData() -> some View {
         modifier(GenerateDataViewModifier())
     }
+    
+    // https://designcode.io/swiftui-handbook-conditional-modifier
+    // https://www.avanderlee.com/swiftui/conditional-view-modifier/
+    
+    @ViewBuilder func `if`<Content: View>(_ condition: Bool, transform: (Self) -> Content) -> some View {
+         if condition {
+             transform(self)
+         } else {
+             self
+         }
+     }
 }

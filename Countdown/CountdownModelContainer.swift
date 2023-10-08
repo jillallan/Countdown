@@ -19,14 +19,21 @@ struct CountdownModelContainer {
         } catch {
             fatalError("Unable to load model container: \(error.localizedDescription)")
         }
+        
+        
     }
 }
 
 extension CountdownModelContainer: ViewModifier {
+    
+    
     func body(content: Content) -> some View {
         content
 #if DEBUG
-            .generateData()
+            .if(!CommandLine.arguments.contains("enable-testing")) { view in
+                view
+                    .generateData()
+            }
 #endif
             .modelContainer(container)
     }

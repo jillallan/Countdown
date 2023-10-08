@@ -25,6 +25,7 @@
 		78C0A4A82AD02AF500C21E4A /* ModelPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0A4A72AD02AF500C21E4A /* ModelPreview.swift */; };
 		78C0A4AA2AD02D2A00C21E4A /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0A4A92AD02D2A00C21E4A /* Calendar+Extension.swift */; };
 		78C0A4AC2AD030EA00C21E4A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0A4AB2AD030EA00C21E4A /* DetailView.swift */; };
+		78C0A4B02AD04B6B00C21E4A /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 78C0A4AF2AD04B6B00C21E4A /* ViewInspector */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78C0A4B02AD04B6B00C21E4A /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +198,9 @@
 			dependencies = (
 			);
 			name = Countdown;
+			packageProductDependencies = (
+				78C0A4AF2AD04B6B00C21E4A /* ViewInspector */,
+			);
 			productName = Countdown;
 			productReference = 78C0A4612AD000B200C21E4A /* Countdown.app */;
 			productType = "com.apple.product-type.application";
@@ -268,6 +273,9 @@
 				Base,
 			);
 			mainGroup = 78C0A4582AD000B200C21E4A;
+			packageReferences = (
+				78C0A4AE2AD04B6B00C21E4A /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			productRefGroup = 78C0A4622AD000B200C21E4A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -683,6 +691,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		78C0A4AE2AD04B6B00C21E4A /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		78C0A4AF2AD04B6B00C21E4A /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78C0A4AE2AD04B6B00C21E4A /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 78C0A4592AD000B200C21E4A /* Project object */;
 }
